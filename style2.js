@@ -182,3 +182,13 @@
 //     document.querySelector("h2").textContent="downloaded"
 //   }
 // },30);
+
+function stringreverse(string){
+    let ans = string
+           .split(" ")
+           .map((word)=>word.length>=5?word.split("").reverse().join(""):word)
+           .join(" ")
+           console.log(ans)
+}
+
+stringreverse("this is sushant")
