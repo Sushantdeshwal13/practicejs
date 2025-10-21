@@ -182,13 +182,78 @@
 //     document.querySelector("h2").textContent="downloaded"
 //   }
 // },30);
+//-------------------------------------------
+// function stringreverse(string){
+//     let ans = string
+//            .split(" ")
+//            .map((word)=>word.length>=5?word.split("").reverse().join(""):word)
+//            .join(" ")
+//            console.log(ans)
+// }
 
-function stringreverse(string){
-    let ans = string
-           .split(" ")
-           .map((word)=>word.length>=5?word.split("").reverse().join(""):word)
-           .join(" ")
-           console.log(ans)
-}
+// stringreverse("this is sushant")
+//---------------------------------------------
+// function countbits(n){
+//     return n.toString(2).split("").filter(bit=>bit==="1").length;
+// }
 
-stringreverse("this is sushant")
+// console.log(countbits(12345))
+
+//--------------------------------------
+
+// function opensenior(data){
+//     return data.map(([age,handicap])=>
+//     (age>=55 && handicap >7) ? "senior" : "open")
+// }
+
+// console.log(opensenior([[18,20],[45,3],[61,12]]));
+
+
+//----------------------------------------
+
+// function highandlow(numbers){
+//     const arr =  numbers.split(" ").map(Number)
+//     const max = Math.max(...arr);
+//     const min = Math.min(...arr);
+//     return `${max} ${min}`;
+// }
+
+// console.log(highandlow("1 2 3 4 5"));
+
+//-----------------------------------
+// function order(words){
+//     if(!words)  return "";
+
+//     return words.split(" ")
+//            .sort((a,b)=> a.match(/\d/)-b.match(/\d/))
+//            .join(" ")
+    
+// }
+// console.log(order("is2 Thi1s T4est 3a")); 
+//----------------------------
+// function solution(str, ending){
+//     return str.endsWith(ending)
+// }
+// console.log(solution("abc","bc"))
+//------------------------------------
+
+// function desorder(n){
+//     return Number(
+//         n.toString()
+//         .split("")
+//         .sort((a,b)=>b-a)
+//         .join("")
+//     )
+// }
+// console.log(desorder(43256))
+
+//-----------------------------------------------
+// function check(dna){
+//     let pairs={A:'T', T:'A',G:'C',C:'G'}
+//     return dna.split('')
+//     .map((base)=>pairs[base])
+//     .join("")
+// }
+// console.log(check("ATTGC"))
+
+//----------------
